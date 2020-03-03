@@ -1,0 +1,36 @@
+{
+  "groups": [
+    {
+      "name": "spring.datasource.druid.core",
+      "type": "javax.sql.DataSource",
+      "sourceType": "com.jinmo.galaxy.datasource.DataSourceAutoConfig",
+      "sourceMethod": "dataSourceCore()"
+    },
+    {
+      "name": "spring.datasource.druid.log",
+      "type": "javax.sql.DataSource",
+      "sourceType": "com.jinmo.galaxy.datasource.DataSourceAutoConfig",
+      "sourceMethod": "dataSourceLog()"
+    },
+    {
+      "name": "spring.datasource.druid.master",
+      "type": "javax.sql.DataSource",
+      "sourceType": "com.jinmo.galaxy.datasource.ShardingDataSourceConfig",
+      "sourceMethod": "dataSourceMaster()"
+    },
+    {
+      "name": "spring.datasource.druid.single",
+      "type": "javax.sql.DataSource",
+      "sourceType": "com.jinmo.galaxy.datasource.ShardingDataSourceConfig",
+      "sourceMethod": "dataSourceSingle()"
+    },
+    {
+      "name": "spring.datasource.druid.slave",
+      "type": "javax.sql.DataSource",
+      "sourceType": "com.jinmo.galaxy.datasource.ShardingDataSourceConfig",
+      "sourceMethod": "dataSourceSlave()"
+    }
+  ],
+  "properties": [],
+  "hints": []
+}
